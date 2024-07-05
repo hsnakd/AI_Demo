@@ -2,15 +2,13 @@ package com.cydeo;
 
 public class TabnineCoding {
 
-    public static void main(String[] args) {
-        int[] numbers = {1, 2, 3, 4, 5};
-        int sum = 0;
-
-        for (int i = 0; i < numbers.length; i++) {
-            sum += numbers[i];
+    // Create static method that can reverse an array and returns it
+    public static int[] reverseArray(int[] array) {
+        int[] reversedArray = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            reversedArray[i] = array[array.length - 1 - i];
         }
-
-        System.out.println("Sum: " + sum);
+        return reversedArray;
     }
 
 }
